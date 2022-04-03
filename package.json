@@ -1,0 +1,12 @@
+{
+  "name": "urna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/scss:assets/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
