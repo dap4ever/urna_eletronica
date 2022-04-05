@@ -18,6 +18,46 @@ body {
   width: 500px;
   height: 320px;
   background: linear-gradient(to right, #E8E8E8, #c1c1c1);
+  border: 2px solid #555;
+  display: flex;
+  flex-direction: column;
+}
+.urna .tela .d-1 {
+  flex: 1;
+  display: flex;
+}
+.urna .tela .d-1 .d-1-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.urna .tela .d-1 .d-1-left .d-1-1 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.urna .tela .d-1 .d-1-left .d-1-2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.urna .tela .d-1 .d-1-left .d-1-3 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.urna .tela .d-1 .d-1-left .d-1-4 {
+  flex: 1;
+  line-height: 30px;
+}
+.urna .tela .d-1 .d-1-right {
+  width: 90px;
+}
+.urna .tela .d-2 {
+  height: 50px;
+  font-size: 14px;
+  border-top: 2px solid #000;
+  padding-left: 10px;
 }
 .urna .teclado {
   margin-left: 30px;
@@ -26,6 +66,7 @@ body {
 .urna .teclado--linha {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 .urna .teclado--botao {
   width: 70px;
@@ -57,3 +98,5 @@ body {
   width: 90px;
   height: 50px;
 }
+
+/*# sourceMappingURL=style.css.map */
