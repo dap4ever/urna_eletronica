@@ -1,5 +1,22 @@
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.pisca {
+  animation-name: pisca;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
 * {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -30,6 +47,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 .urna .tela .d-1 .d-1-left .d-1-1 {
   height: 50px;
@@ -40,11 +58,19 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .urna .tela .d-1 .d-1-left .d-1-3 {
-  display: flex;
-  align-items: center;
   height: 50px;
+}
+.urna .tela .d-1 .d-1-left .d-1-3 .numero {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
 }
 .urna .tela .d-1 .d-1-left .d-1-4 {
   flex: 1;
@@ -52,6 +78,22 @@ body {
 }
 .urna .tela .d-1 .d-1-right {
   width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.urna .tela .d-1 .d-1-right .d-1-image {
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+.urna .tela .d-1 .d-1-right .d-1-image img {
+  width: 100%;
+}
+.urna .tela .d-1 .d-1-right .d-1-image.small {
+  width: 80%;
+  font-size: 12px;
 }
 .urna .tela .d-2 {
   height: 50px;
@@ -62,6 +104,7 @@ body {
 .urna .teclado {
   margin-left: 30px;
   background-color: #403a3a;
+  align-items: flex-end;
 }
 .urna .teclado--linha {
   display: flex;
